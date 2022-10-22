@@ -35,21 +35,21 @@ app.post("/api/analyze", (req, res, next) => {
             if (response.data.sentiment === "positive") {
                 let confidence = Math.ceil(response.data.aggregate_sentiment.pos * 100);
                 res.status(200).json({
-                    result: "positive",
+                    result: "Positive",
                     confidencePercentage: confidence,
                 });
             }
             if (response.data.sentiment === "negative") {
                 let confidence = Math.ceil(response.data.aggregate_sentiment.neg * 100);
                 res.status(200).json({
-                    result: "negative",
+                    result: "Negative",
                     confidencePercentage: confidence,
                 });
             }
             if (response.data.sentiment === "neutral") {
                 let confidence = Math.ceil(response.data.aggregate_sentiment.neu * 100);
                 res.status(200).json({
-                    result: "neutral",
+                    result: "Neutral",
                     confidencePercentage: confidence,
                 });
             }
