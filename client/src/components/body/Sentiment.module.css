@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+}
