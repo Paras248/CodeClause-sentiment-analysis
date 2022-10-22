@@ -24,10 +24,29 @@
 }
 
 .input {
+    outline: none;
     resize: none;
     height: 170px;
+    border: 1px solid #e7eaee;
+    border-radius: 3px;
+    color: #7f8a96;
+    font-size: 0.938rem;
+    height: 10rem;
+    line-height: 1.6;
+    padding: 1rem 1.5rem;
+}
+
+.input:focus {
+    border: 1px solid #a2a3a5;
 }
 
 .button:hover {
     background-color: #1d99ff;
+}
+
+.heading {
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    color: #2b3e51;
 }

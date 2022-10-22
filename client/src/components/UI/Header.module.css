@@ -1,0 +1,11 @@
+.header {
+    background-color: #4a8df1;
+    padding: 8px;
+    color: white;
+}
+
+.header-text {
+    font-family: "Silkscreen", cursive;
+    font-size: 18px;
+    margin-left: 15px;
+}

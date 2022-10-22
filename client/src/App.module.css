@@ -3,3 +3,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.heading {
+    color: #4a8df1;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+    text-align: center;
+}
