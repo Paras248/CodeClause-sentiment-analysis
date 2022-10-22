@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./NewSentiment.module.css";
 import axios from "axios";
 
-const NewSentiment = ({ text, setText, setResponse }) => {
+const NewSentiment = ({ text, setText, setResponse, setIsLoading }) => {
     const textChangeHandler = (event) => {
         setText(event.target.value);
     };
@@ -22,10 +22,12 @@ const NewSentiment = ({ text, setText, setResponse }) => {
             data: formData,
         };
 
+        setIsLoading(true);
         axios
             .request(options)
             .then((response) => {
                 setResponse({ ...response.data });
+                setIsLoading(false);
             })
             .catch((err) => {
                 console.log(err);

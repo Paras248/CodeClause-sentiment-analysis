@@ -1,7 +1,8 @@
 import React from "react";
+import LoadingAnimation from "../UI/LoadingAnimation";
 import styles from "./SentimentResult.module.css";
 
-const SentimentResult = ({ response }) => {
+const SentimentResult = ({ response, isLoading }) => {
     let result = response.result;
     let percentage = response.confidencePercentage;
     return (
@@ -12,7 +13,8 @@ const SentimentResult = ({ response }) => {
                     <p>TAG</p>
                     <p>CONFIDENCE</p>
                 </div>
-                {result !== "" && (
+                {isLoading && <LoadingAnimation />}
+                {result !== "" && !isLoading && (
                     <div className={styles["value-sub-container"]}>
                         <p>{result}</p>
                         <p>{percentage}%</p>

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import NewSentiment from "../Sentiment/NewSentiment";
 import SentimentResult from "../Sentiment/SentimentResult";
+import LoadingAnimation from "../UI/LoadingAnimation";
 import styles from "./Sentiment.module.css";
 
 const Sentiment = ({ text, setText }) => {
     const [response, setResponse] = useState({ result: "", confidencePercentage: "" });
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         console.log(response);
@@ -12,8 +14,13 @@ const Sentiment = ({ text, setText }) => {
 
     return (
         <div className={styles.container}>
-            <NewSentiment text={text} setText={setText} setResponse={setResponse} />
-            <SentimentResult response={response} />
+            <NewSentiment
+                text={text}
+                setText={setText}
+                setResponse={setResponse}
+                setIsLoading={setIsLoading}
+            />
+            <SentimentResult response={response} isLoading={isLoading} />
         </div>
     );
 };
