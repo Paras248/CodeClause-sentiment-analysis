@@ -5,3 +5,14 @@
     margin-right: 15%;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        box-sizing: inherit;
+        display: block;
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+}

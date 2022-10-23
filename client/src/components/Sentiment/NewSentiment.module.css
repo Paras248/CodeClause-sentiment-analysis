@@ -26,7 +26,6 @@
 .input {
     outline: none;
     resize: none;
-    height: 170px;
     border: 1px solid #e7eaee;
     border-radius: 3px;
     color: #7f8a96;
@@ -49,4 +48,21 @@
     font-weight: 400;
     margin: 0 0 1rem;
     color: #2b3e51;
+}
+
+@media screen and (max-width: 1300px) {
+    .button {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        border-right: none;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        width: 80%;
+    }
+    .button {
+        width: 100%;
+    }
 }

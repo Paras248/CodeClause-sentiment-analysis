@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NewSentiment from "../Sentiment/NewSentiment";
 import SentimentResult from "../Sentiment/SentimentResult";
-import LoadingAnimation from "../UI/LoadingAnimation";
 import styles from "./Sentiment.module.css";
 
 const Sentiment = ({ text, setText }) => {
