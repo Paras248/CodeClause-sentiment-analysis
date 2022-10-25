@@ -15,7 +15,7 @@ const NewSentiment = ({ text, setText, setResponse, setIsLoading }) => {
 
         const options = {
             method: "POST",
-            url: "http://localhost:4000/api/analyze",
+            url: "https://sentiment-analysis-vq3p.onrender.com/api/analyze",
             headers: {
                 "Content-Type": "application/json",
             },
