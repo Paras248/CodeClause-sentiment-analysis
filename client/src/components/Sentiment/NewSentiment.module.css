@@ -1,4 +1,6 @@
 .container {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 50px;
     border-right: 1px solid rgba(204, 204, 204, 0.5);
@@ -40,7 +42,7 @@
 }
 
 .button:hover {
-    background-color: #1d99ff;
+    background-color: #2a9fff;
 }
 
 .heading {
@@ -64,5 +66,13 @@
     }
     .button {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
     }
 }
