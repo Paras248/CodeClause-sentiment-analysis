@@ -10,7 +10,7 @@
 
   3. Then register to an api using this link (https://rapidapi.com/gaurmanojkumar530/api/text-analysis12/), copy the rapid_api_key
 
-  4. Create a variable inside .env file name as (API_KEY) and paste the value of token there. for eg API_KEY=YOUR_COPIED_TOKEN.
+  4. Create a variable inside .env file name as (API_KEY) and paste the value of token there. for eg API_KEY=YOUR_COPIED_API_KEY.
 
   5. Then run npm start inside api directory in cmd/terminal. 
   
