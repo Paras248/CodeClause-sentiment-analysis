@@ -1,5 +1,7 @@
 # sentiment-analysis
 
+- [Live Demo: Sentiment analysis](https://paras248-web-sentiment-analysis.netlify.app) - It will take time to get response because the backend is hosted on free tiers.
+
 - first check whether node and npm exists using this command node -v and npm -v if not then install node and install npm using command npm i npm -g.
 
 - ### For backend: 
