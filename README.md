@@ -2,7 +2,7 @@
 
 - You can analyze the sentiments/emotions within the text using this sentiment-analysis
 
-- [Live Demo: Sentiment analysis](https://paras248-web-sentiment-analysis.netlify.app) - It will take time to get response because the backend is hosted on free tiers.
+- [Live Demo: Sentiment analysis](https://paras248-web-sentiment-analysis.netlify.app) - At first it will take time to get response because the backend is hosted on free tiers.
 
 - ## Installation guide given below.
 
