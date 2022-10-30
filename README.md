@@ -25,7 +25,7 @@
 
   1. Direct inside client folder in cmd/terminal then run npm i.
 
-  2. The output of front end looks like
+  2. jThen run npm start after successful compilation the output of front end will look like
   
   ![screen55](https://user-images.githubusercontent.com/60874409/198848992-73bf86ef-4e8d-4e27-b470-a57fbda758c1.jpg)
  
